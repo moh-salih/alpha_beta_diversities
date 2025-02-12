@@ -27,7 +27,7 @@ def rarefaction_curve(sample, depths):
 def plot_rarefaction_curve(sample_by_feature):
     # Define rarefaction depths
     max_depth = sample_by_feature.max().max()
-    depths = np.linspace(1, max_depth, num=100, dtype=int)
+    depths = np.linspace(100, max_depth, num=80, dtype=int)
 
     # Compute rarefaction curves for both samples
     np.random.seed(42)  # For reproducibility

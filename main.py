@@ -1,5 +1,6 @@
-from data_preprocessing import sample_by_feature 
+from data_preprocessing import make_sample_by_feature 
 from visualization import plot_rarefaction_curve
 
 
+sample_by_feature = make_sample_by_feature(r"adults_transicripts_report_MO_minimum-hit-groups_5_CS_003.txt", r"larva_transicripts_report_MO_minimum-hit-groups_5_CS_003.txt")
 plot_rarefaction_curve(sample_by_feature)
